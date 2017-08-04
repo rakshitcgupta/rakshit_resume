@@ -1,8 +1,162 @@
-\documentclass[10pt]{article}
-\usepackage[margin=1cm]{geometry}
-\title{\bfseries\Huge Rakshit Gupta}
-\author{rakshitgupta50@gmail.com}
-\date{}
+\documentclass[11pt]{article} %Sets the default text size to 11pt and class to article.
+%------------------------Dimensions--------------------------------------------
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{Black}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\usepackage{array}
+\topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
+\oddsidemargin=0.0in %length of margin on sides for odd pages
+\evensidemargin=0in %length of margin on sides for even pages
+\textwidth=6.5in %How wide you want your text to be
+\marginparwidth=0.5in
+\headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
+\headsep=0pt %Increase to increase white space in between headers and the top of the page
+\textheight=9.0in %How tall the text body is allowed to be on each page
 \begin{document}
-\maketitle
+%These two pieces of code tell LaTeX that everything that goes in between these tags is what you want displayed as your actual document.
+
+
+\centerline{{\Huge \sc Rakshit Gupta}}  %Makes whatever text you put in parenthesis move to the center
+%Prevents the following text from being indented
+%This is the same as a return in Latex
+\centerline{07219011950 \textbullet \hspace{5pt}rakshitgupta50@gmail.com \textbullet \hspace{5pt} }
+\centerline{B-6,BILT Old paper mill colony,Ballarpur,Dist. Chandrapur,Maharashtra}
+\noindent
+
+\NewPart{Academics}{}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+ \begin{tabular}{|P{3cm}|P{5.5cm}|P{3cm}|P{3cm}|}
+
+   \hline
+  
+    \textbf {Examination} & \textbf { College/School} & \textbf {Passing Year} & \textbf { Percentage/CGPA Obtained} \\ \hline
+	
+    Sem-4(MU) & Sardar Patel Institute Of Technology,Mumbai & June 2017 & 9  \\ \hline
+    Sem-3(MU) & Sardar Patel Institute Of Technology,Mumbai & Jan 2017 & 8.8  \\ \hline
+    Sem-2(MU) & Sardar Patel Institute Of Technology,Mumbai & June 2016 & 8.06 \\ \hline
+    Sem-1(MU) & Sardar Patel Institute Of Technology,Mumbai & Jan 2016 & 7.8  \\ \hline
+    Class XII (BIE) & Vijaya Ratna Jr College,Hyderabad  & April 2015  & 97.4\%  \\ \hline
+    Class X (CBSE) & Modern English School,Jeypore  & March 2013 & 10  \\  \hline
+
+  \end{tabular}
+  \newline
+
+
+\NewPart{    Technical Skills}{}
+
+\vspace{0pt}
+
+\begin{itemize}
+\itemsep-0.5em 
+\item \textbf{Programming Languages:} C, JAVA, PYTHON
+
+\item \textbf{Version Control System:} Github
+\vspace{0pt}
+
+\item \textbf{Web/Scripting:} HTML, CSS, Bootstrap, Javascript
+\item \textbf{Creative/Others:} Adobe Phone Gap, Adobe Photoshop, Latex
+
+\item \textbf{IDEs:}  Eclipse, Jetbrains IntelliJ IDEA, Jetbrains Clion, Jetbrains Phpstorm, Android Studio, Dev C++, Turbo C++
+
+\item \textbf{Operating System:} Windows, Linux, Android
+
+\end{itemize}
+
+
+
+\NewPart{    Personal Qualities}{}
+\begin{itemize}
+\itemsep-0.5em 
+\item \textbf{Othello: }A logical game coded using JAVA Swing ,developed as a Second Year Computer Engineering project for the Object Oriented Programming Methodology Course 
+\item \textbf{Encryption-Based Program In C: }A simple encryption program which encrypted the text using substitution and rail-fence mechanism, developed as a First Year Computer Engineering project for the Structural Programming Approach course
+\end{itemize}
+
+
+\NewPart{    Personal Qualities}{}
+
+\begin{itemize}
+\itemsep-0.5em 
+\item Excellent logical , analytical and computational skills
+\item Strong motivational and leadership skills
+\item Ability to work under pressure 
+\item Ability to work as individual as well as team 
+\end{itemize}
+
+
+\NewPart{  Position of Responsibilities}{}
+
+\begin{itemize}
+\itemsep-0.5em 
+\item 'Creative Head' of college’s Computer Society Of India (CSI) committee for the academic year 2017-18
+\item 'Head of Programming' of college’s IOT committee for the academic year 2017-18
+\item Organiser, Github workshop for Second and Third year Computer and IT students 
+\item Organiser,'No Escape' event, technical festival MATRIX of college,2016-17 
+\end{itemize}
+
+%%% Hobbies and interests
+%%% ------------------------------------------------------------
+\NewPart{Interests}{}
+Sports(especially Basketball), watching anime, Playing guitar, Discovering new places and cultures
+
 \end{document}
