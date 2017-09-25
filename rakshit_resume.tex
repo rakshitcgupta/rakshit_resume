@@ -3,6 +3,7 @@
 \usepackage{multirow}
 \usepackage{tabulary}
 \usepackage{hhline}
+\usepackage[document]{ragged2e}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[protrusion=true,expansion=true]{microtype}
@@ -74,7 +75,7 @@
 \marginparwidth=0.5in
 \headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
 \headsep=0pt %Increase to increase white space in between headers and the top of the page
-\textheight=9.0in %How tall the text body is allowed to be on each page
+\textheight=10.0in %How tall the text body is allowed to be on each page
 \begin{document}
 %These two pieces of code tell LaTeX that everything that goes in between these tags is what you want displayed as your actual document.
 
@@ -83,8 +84,8 @@
 %Prevents the following text from being indented
 %This is the same as a return in Latex
 \centerline{\fontsize{6}{6}\selectfont COMPUTER ENGINEERING STUDENT}
-\centerline{07219011950 \textbullet \hspace{5pt}rakshitgupta50@gmail.com \textbullet \hspace{5pt} }
-\centerline{B-6, BILT Old paper mill colony, Ballarpur, Dist. Chandrapur, Maharashtra}
+\centerline{+91 7219011950 \textbullet \hspace{5pt}rakshitgupta50@gmail.com \textbullet \hspace{5pt} }
+\centerline{B-6, BILT Old Paper Mill Colony, Ballarpur, Dist. Chandrapur, Maharashtra -442701}
 \noindent
 
 
@@ -92,21 +93,16 @@
 \NewPart{ Academics}{}
 
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
- \begin{tabular}{|P{3cm}|P{5.5cm}|P{3cm}|P{3cm}|}
-
-   \hline
-  
-    \textbf {Examination} & \textbf { College/School} & \textbf {Passing Year} & \textbf { Percentage/CGPA Obtained} \\ \hline
-	
-    B.E. Sem-4(MU) & \multirow{4}{5.5cm}{\centering Sardar Patel Institute Of Technology, Mumbai} & June 2017 & 9  \\ 
-    \hhline{-~--}
-    B.E. Sem-3(MU) &  & Jan 2017 & 8.8  \\ \hhline{-~--}
-    B.E. Sem-2(MU) &  & June 2016 & 8.06 \\ \hhline{-~--}
-    B.E. Sem-1(MU) &  & Jan 2016 & 7.8  \\ \hline
-    \centering Class XII (BIE) & Vijaya Ratna Jr College, Hyderabad  & April 2015  & 97.4\%  \\ \hline
-    Class X (CBSE) & Modern English School, Jeypore  & March 2013 & 10  \\  \hline
-
-  \end{tabular}
+ \begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Examination}} & \textbf{College/School}                                                                                 & \textbf{Passing Year} & \textbf{\begin{tabular}[c]{@{}c@{}}Percentage/CGPA  \\ Obtained\end{tabular}} \\ \hline
+\multirow{4}{*}{B.E.(MU)}     & Sem IV     & \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Sardar Patel Institute Of\\ Technology, Mumbai\end{tabular}} & June 2017             & 9                                                                             \\ \cline{2-2} \cline{4-5} 
+                              & Sem III    &                                                                                                         & Jan 2017              & 8.8                                                                           \\ \cline{2-2} \cline{4-5} 
+                              & Sem II     &                                                                                                         & June 2016             & 8.06                                                                          \\ \cline{2-2} \cline{4-5} 
+                              & Sem I      &                                                                                                         & Jan 2016              & 7.7                                                                           \\ \hline
+\multicolumn{2}{|c|}{Class XII (BIE)}      & Vijaya Ratna Jr. College, Hyderabad                                                                     & April 2015            & 97.4\%                                                                        \\ \hline
+\multicolumn{2}{|c|}{Class X (CBSE)}       & Modern English School, Jeypore                                                                          & March 2013            & 10                                                                            \\ \hline
+\end{tabular}
   \newline
 
 
@@ -126,11 +122,11 @@
 \vspace{0pt}
 
 \item \textbf{Web:} HTML, CSS, Bootstrap, Javascript
-\item \textbf{Creative/Others:} Adobe Photoshop, Latex, Autocad, Adobe Phone Gap
+\item \textbf{Creative/Others:} MySQL, Adobe Photoshop, Latex, Autocad, Adobe Phone Gap
 
-\item \textbf{IDEs:}  Eclipse, Jetbrains IntelliJ IDEA, Jetbrains Clion, Jetbrains Phpstorm, Android Studio, Dev C++, Turbo C++
+\item \textbf{IDEs:}  Eclipse, Jetbrains IntelliJ IDEA, Jetbrains Clion, Jetbrains Phpstorm, Dev C++, Turbo C++
 
-\item \textbf{Operating System:} Windows, Linux, Android
+\item \textbf{Operating System:} Windows, Linux
 
 \end{itemize}
 
@@ -148,25 +144,16 @@
 \end{itemize}
 
 
-\NewPart{    Personal Abilities}{}
+
+
+\NewPart{  Positions of Responsibility}{}
 
 \begin{itemize}
 \itemsep-0.5em 
-\item Excellent logical , analytical and computational skills
-\item Strong motivational and leadership skills
-\item Ability to work under pressure 
-\item Ability to work as individual as well as team 
-\end{itemize}
-
-
-\NewPart{  Position of Responsibilities}{}
-
-\begin{itemize}
-\itemsep-0.5em 
-\item \textbf{'Creative Head'} of college’s Computer Society Of India (CSI) committee for the academic year 2017-18
-\item \textbf{'Head of Programming'} of college’s IOT committee for the academic year 2017-18
-\item Organiser, Github workshop for Second and Third year Computer and IT students 
-\item Organiser,'No Escape' event, technical festival MATRIX of college,2016-17 
+\item \textbf{Creative Head} of college’s Computer Society Of India (CSI) committee for the academic year 2017-18
+\item \textbf{Programming Head} of college’s IOT committee for the academic year 2017-18
+\item Organiser, Github Workshop for Second and Third year Computer and IT students 
+\item Organiser,No Escape event, technical festival MATRIX of college,2016-17 
 \end{itemize}
 
 %%% Hobbies and interests
