@@ -3,6 +3,7 @@
 \usepackage{multirow}
 \usepackage{tabulary}
 \usepackage{hhline}
+\usepackage[document]{ragged2e}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[protrusion=true,expansion=true]{microtype}
@@ -67,7 +68,7 @@
 		\normalsize \par}
 
 \usepackage{array}
-\topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
+\topmargin=0.4in %length of margin at the top of the page (1 inch added by default)
 \oddsidemargin=0.0in %length of margin on sides for odd pages
 \evensidemargin=0in %length of margin on sides for even pages
 \textwidth=6.5in %How wide you want your text to be
@@ -83,8 +84,8 @@
 %Prevents the following text from being indented
 %This is the same as a return in Latex
 \centerline{\fontsize{6}{6}\selectfont COMPUTER ENGINEERING STUDENT}
-\centerline{07219011950 \textbullet \hspace{5pt}rakshitgupta50@gmail.com \textbullet \hspace{5pt} }
-\centerline{B-6, BILT Old paper mill colony, Ballarpur, Dist. Chandrapur, Maharashtra}
+\centerline{+91 7219011950 \textbullet \hspace{5pt}rakshitgupta50@gmail.com \textbullet \hspace{5pt} }
+\centerline{B-6, BILT Old Paper Mill Colony, Ballarpur, Dist. Chandrapur, Maharashtra -442701}
 \noindent
 
 
@@ -92,21 +93,16 @@
 \NewPart{ Academics}{}
 
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
- \begin{tabular}{|P{3cm}|P{5.5cm}|P{3cm}|P{3cm}|}
-
-   \hline
-  
-    \textbf {Examination} & \textbf { College/School} & \textbf {Passing Year} & \textbf { Percentage/CGPA Obtained} \\ \hline
-	
-    B.E. Sem-4(MU) & \multirow{4}{5.5cm}{\centering Sardar Patel Institute Of Technology, Mumbai} & June 2017 & 9  \\ 
-    \hhline{-~--}
-    B.E. Sem-3(MU) &  & Jan 2017 & 8.8  \\ \hhline{-~--}
-    B.E. Sem-2(MU) &  & June 2016 & 8.06 \\ \hhline{-~--}
-    B.E. Sem-1(MU) &  & Jan 2016 & 7.8  \\ \hline
-    \centering Class XII (BIE) & Vijaya Ratna Jr College, Hyderabad  & April 2015  & 97.4\%  \\ \hline
-    Class X (CBSE) & Modern English School, Jeypore  & March 2013 & 10  \\  \hline
-
-  \end{tabular}
+ \begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Examination}} & \textbf{College/School}                                                                                 & \textbf{Passing Year} & \textbf{\begin{tabular}[c]{@{}c@{}}Percentage/CGPA  \\ Obtained\end{tabular}} \\ \hline
+\multirow{4}{*}{B.E.(MU)}     & Sem IV     & \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Sardar Patel Institute Of\\ Technology, Mumbai\end{tabular}} & June 2017             & 9                                                                             \\ \cline{2-2} \cline{4-5} 
+                              & Sem III    &                                                                                                         & Jan 2017              & 8.8                                                                           \\ \cline{2-2} \cline{4-5} 
+                              & Sem II     &                                                                                                         & June 2016             & 8.06                                                                          \\ \cline{2-2} \cline{4-5} 
+                              & Sem I      &                                                                                                         & Jan 2016              & 7.7                                                                           \\ \hline
+\multicolumn{2}{|c|}{Class XII (BIE)}      & Vijaya Ratna Jr. College, Hyderabad                                                                     & April 2015            & 97.4\%                                                                        \\ \hline
+\multicolumn{2}{|c|}{Class X (CBSE)}       & Modern English School, Jeypore                                                                          & March 2013            & 10                                                                            \\ \hline
+\end{tabular}
   \newline
 
 
@@ -125,13 +121,10 @@
 \item \textbf{Version Control System:} Github
 \vspace{0pt}
 
-\item \textbf{Web:} HTML, CSS, Bootstrap, Javascript
-\item \textbf{Creative/Others:} Adobe Photoshop, Latex, Autocad, Adobe Phone Gap
+\item \textbf{Web/Scripting:} HTML, CSS, Bootstrap, Javascript, PHP
+\item \textbf{Creative/Others:} MySQL, Adobe Photoshop, Latex, Autocad, Adobe Phone Gap
 
-\item \textbf{IDEs:}  Eclipse, Jetbrains IntelliJ IDEA, Jetbrains Clion, Jetbrains Phpstorm, Android Studio, Dev C++, Turbo C++
-
-\item \textbf{Operating System:} Windows, Linux, Android
-
+\item \textbf{IDEs:}  Eclipse, Jetbrains IntelliJ IDEA, Jetbrains Clion, Jetbrains Phpstorm, Dev C++, Turbo C++
 \end{itemize}
 
 
@@ -139,15 +132,23 @@
 \NewPart{    Projects}{}
 \begin{itemize}
 \itemsep-0.5em
+\item \textbf{Hostel Website: }\hfill {July 2017 - Present}
+\\Developing website for the hostel of Sardar Patel Institute Of Technology using HTML, CSS, Javascript, Bootstrap, PHP and Mysql 
+\\Complaints and Students databases are included in the website
 \item \textbf{GUI For SMS Broadcast: }\hfill {July 2017 - Present}
-\\Designed a GUI in python to broadcast a message string to more than 1000 users
+\\Broadcasts a message string to more than 100 users over a 2G GSM Modem
+\\Extracted phone numbers from Excel, CSV and Text file formats
+\\Designed a GUI using Tkinter, the standard GUI library for Python
 %Function coded in python to take 10 digit numbers from a text file/csv/xlsx file format 
-\item \textbf{Othello Game Using Swing Framework In Java: }\hfill {July 2016 - October 2016}
-\\Othello is a strategy board game for two players, played on an 8×8 uncheckered board, developed as a Second Year Computer Engineering project for the Object Oriented Programming Methodology Course 
-\item \textbf{Encryption-Based Program In C: }\hfill {Jan 2016 - March 2016}\\A simple encryption program which encrypted the text using substitution and rail-fence mechanism, developed as a First Year Computer Engineering project for the Structural Programming Approach course
+\item \textbf{Othello Game: }\hfill {July 2016 - October 2016}
+\\Othello (also known as Reversi) is a strategy board game for two players, played on an 8×8 uncheckered board; developed as a Second Year Computer Engineering project for the Object Oriented Programming Methodology Course
+\\Used Swing Framework in Java 
+\item \textbf{Encryption-Based Program In C: }\hfill {Jan 2016 - March 2016}\\A simple encryption program which encrypted the text using substitution and rail-fence mechanism; developed as a First Year Computer Engineering project for the Structural Programming Approach Course
 \end{itemize}
 
 
+ 
+ 
 \NewPart{    Personal Abilities}{}
 
 \begin{itemize}
@@ -158,20 +159,44 @@
 \item Ability to work as individual as well as team 
 \end{itemize}
 
-
-\NewPart{  Position of Responsibilities}{}
+\NewPart{  Positions of Responsibility}{}
 
 \begin{itemize}
 \itemsep-0.5em 
-\item \textbf{'Creative Head'} of college’s Computer Society Of India (CSI) committee for the academic year 2017-18
-\item \textbf{'Head of Programming'} of college’s IOT committee for the academic year 2017-18
-\item Organiser, Github workshop for Second and Third year Computer and IT students 
-\item Organiser,'No Escape' event, technical festival MATRIX of college,2016-17 
+\item \textbf{Creative Head} of college’s Computer Society Of India (CSI) committee for the academic year 2017-18
+\item \textbf{Programming Head} of college’s IOT committee for the academic year 2017-18
+\item Junior TPC for the academic year 2017-18
+\item Organiser, Github Workshop for Second and Third year Computer and IT students 
+\item Organiser,No Escape event, technical festival MATRIX of college,2016-17 
+\end{itemize}
+\NewPart{  Extracurricular Activities}{}
+
+\begin{itemize}
+\itemsep-0.5em 
+	
+\item Volunteered with the \textbf{Lakshya Bahuudeshiya Sanstha Group} by Teaching \\(Mathematics, Science) to the underprivileged kids. (June 17)
+\item Volunteered with \textbf{Rotary Club} for educating the people of rural area for cleanliness
+\item 1st prize in intra school Basketball,2011
+\item 3rd prize in inter-branch school Elocution competition,2011
+\item 3rd prize in inter-branch school drawing competition,2010
 \end{itemize}
 
 %%% Hobbies and interests
 %%% ------------------------------------------------------------
 \NewPart{ Interests}{}
-Basketball, Watching anime, Playing guitar, Discovering new places and cultures
+Basketball, Watching anime, Discovering new places and cultures
+
+\NewPart{ Personal Details}{}
+Father's Name: Chandresh Gupta 	\hspace{3cm}		Mother's Name: Poonam Gupta \\
+Gender: Male 				\hspace{6.35cm}		Date Of Birth:14 July 1997 \\
+Nationality: Indian			\hspace{5.40cm}		Marital Status: Unmarried
+
+\NewPart{ Declaration}{}
+I declare that the information mentioned here in my resume is correct and complete to the best of my knowledge and nothing has been concealed or distorted. 
+If at any time I am found to have concealed / distorted any material information, my appointment shall be liable for termination without notice or compensation. \\
+
+
+\textbf{DATE: 18 Sep 2017}
+
 
 \end{document}
